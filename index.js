@@ -5,38 +5,41 @@ console.log(element1);
 
 // Exercise 2: Changing HTML Content
 // TODO: Select all paragraph elements and change the content of the second paragraph to "This paragraph has been changed."
-let element2 = document.querySelector('#content');
-element2.innerHTML = '<p>Updated Content</p>';
+// let element2 = document.querySelector('#content');
+let element2 = document.querySelectorAll('p');
+element2[1].innerHTML = '<p>This paragraph has been changed.</p>';
 
 /// Exercise 3: Changing CSS Styles
 // TODO: Select the first list item and change its text color to red
-let element3 = document.querySelector('#content');
-element3.style.backgroundColor = 'lightgreen';
+let element3 = document.querySelector('li');
+element3.style.color = 'red';
 
 // Exercise 4: Adding/Removing Classes
 // TODO: Add the "highlight" class to the first paragraph
 // TODO: Remove the "highlight" class from the first paragraph after 3 seconds
-let element4 = document.querySelector('#list');
-element4.classList.add('active');
+let element4 = document.querySelectorAll('p')[0];
+element4.classList.add('highlight');
 setTimeout(function() {
-    element4.classList.remove('active');
-}, 2000);
+    element4.classList.remove('highlight');
+}, 3000);
 
 // Exercise 5: Creating and Appending Elements
 // TODO: Create a new list item with the text "Item 4" and append it to the existing list
-let newButton = document.createElement('button');
-let element5 = document.querySelector('#content');
-newButton.textContent = 'Click Me';
-element5.appendChild(newButton);
+let newLi = document.createElement('li');
+let element5 = document.querySelector('#list');
+newLi.textContent = 'Item 4';
+element5.appendChild(newLi);
 
 // Exercise 6: Removing Elements
 // TODO: Remove the last list item from the unordered list
-let element6 = document.querySelector('#result');
-element6.remove();
+let element6 = document.querySelector('#list');
+let lastListItem = element6.lastElementChild;
+lastListItem.remove();
 
 // Exercise 7: Handling Events
 // TODO: Add a click event listener to the button that displays an alert saying "Button clicked!"
-newButton.addEventListener('click', function() {
+let button = document.querySelector('#actionButton');
+button.addEventListener('click', function() {
     alert('Button Clicked!');
 });
 
@@ -50,7 +53,6 @@ input.addEventListener('input', function() {
 
 // Exercise 9: Toggling Visibility
 // TODO: Add a click event listener to the button that toggles the visibility of the content div
-let button = document.querySelector('#actionButton');
 button.addEventListener('click', function() {
     div.classList.toggle('hidden');
 });
