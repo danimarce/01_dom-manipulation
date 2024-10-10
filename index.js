@@ -54,11 +54,7 @@ input.addEventListener('input', function() {
 // TODO: Add a click event listener to the button that toggles the visibility of the content div
 let button = document.querySelector('#actionButton');
 button.addEventListener('click', function() {
-    if (div.style.display === 'none') {
-        div.style.display = 'block';
-    } else {
-        div.style.display = 'none';
-    }
+    div.classList.toggle('hidden');
 });
 
 // Exercise 10: Modifying Attributes
