@@ -5,7 +5,6 @@ console.log(element1);
 
 // Exercise 2: Changing HTML Content
 // TODO: Select all paragraph elements and change the content of the second paragraph to "This paragraph has been changed."
-// let element2 = document.querySelector('#content');
 let element2 = document.querySelectorAll('p');
 element2[1].innerHTML = '<p>This paragraph has been changed.</p>';
 
