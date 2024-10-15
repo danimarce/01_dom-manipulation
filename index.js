@@ -1,38 +1,37 @@
 // EXERCISE 1: Selecting Elements
 // TODO: Select the element with the ID 'mainTitle' and log it to the console.
-let element1 = document.querySelector('#mainTitle');
-console.log(element1);
+let mainTitle = document.querySelector('#mainTitle');
+console.log(mainTitle);
 
 // Exercise 2: Changing HTML Content
 // TODO: Select all paragraph elements and change the content of the second paragraph to "This paragraph has been changed."
-let element2 = document.querySelectorAll('p');
-element2[1].innerHTML = '<p>This paragraph has been changed.</p>';
+let paragraphsList = document.querySelectorAll('p');
+paragraphsList[1].innerHTML = '<p>This paragraph has been changed.</p>';
 
 /// Exercise 3: Changing CSS Styles
 // TODO: Select the first list item and change its text color to red
-let element3 = document.querySelector('li');
-element3.style.color = 'red';
+let firstListItem = document.querySelector('li');
+firstListItem.style.color = 'red';
 
 // Exercise 4: Adding/Removing Classes
 // TODO: Add the "highlight" class to the first paragraph
 // TODO: Remove the "highlight" class from the first paragraph after 3 seconds
-let element4 = document.querySelectorAll('p')[0];
-element4.classList.add('highlight');
+let firstParagraph = document.querySelectorAll('p')[0];
+firstParagraph.classList.add('highlight');
 setTimeout(function() {
-    element4.classList.remove('highlight');
+    firstParagraph.classList.remove('highlight');
 }, 3000);
 
 // Exercise 5: Creating and Appending Elements
 // TODO: Create a new list item with the text "Item 4" and append it to the existing list
-let newLi = document.createElement('li');
-let element5 = document.querySelector('#list');
-newLi.textContent = 'Item 4';
-element5.appendChild(newLi);
+let newListItem = document.createElement('li');
+let list = document.querySelector('#list');
+newListItem.textContent = 'Item 4';
+list.appendChild(newListItem);
 
 // Exercise 6: Removing Elements
 // TODO: Remove the last list item from the unordered list
-let element6 = document.querySelector('#list');
-let lastListItem = element6.lastElementChild;
+let lastListItem = list.lastElementChild;
 lastListItem.remove();
 
 // Exercise 7: Handling Events
@@ -44,19 +43,18 @@ button.addEventListener('click', function() {
 
 // Exercise 8: Working with Input
 // TODO: Add an input event listener to the input field that displays the current input value in the result div
-let input = document.querySelector('#inputField');
-let div = document.querySelector('#result');
-input.addEventListener('input', function() {
-    div.textContent = input.value;
+let inputField = document.querySelector('#inputField');
+let divResult = document.querySelector('#result');
+inputField.addEventListener('input', function() {
+    divResult.textContent = inputField.value;
 });
 
 // Exercise 9: Toggling Visibility
 // TODO: Add a click event listener to the button that toggles the visibility of the content div
 button.addEventListener('click', function() {
-    div.classList.toggle('hidden');
+    divResult.classList.toggle('hidden');
 });
 
 // Exercise 10: Modifying Attributes
 // TODO: Select the input field and change its placeholder text to "Enter your name"
-let inputField = document.querySelector('#inputField');
 inputField.placeholder = 'Enter your name';
