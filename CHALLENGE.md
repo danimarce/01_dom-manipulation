@@ -27,52 +27,50 @@ The following exercises must be completed in `index.js`. Each exercise is explai
 
 ```js
 // EXERCISE 1: Selecting Elements
-// Select the element with the ID 'mainTitle' and log it to the console.
+// TODO: Select the element with the ID 'mainTitle' and log it to the console.
 ```
 
 ### Exercise 2: Changing HTML Content
 
 ```js
-// EXERCISE 2: Changing HTML Content
-// Change the inner HTML of the element with the ID 'content' to contain a <p> tag with the text "Updated Content".
+// Exercise 2: Changing HTML Content
+// TODO: Select all paragraph elements and change the content of the second paragraph to "This paragraph has been changed."
 ```
 
 ### Exercise 3: Changing CSS Styles
 
 ```js
-// EXERCISE 3: Changing CSS Styles
-// Change the background color of the element with the ID 'content' to 'lightgreen'.
+// Exercise 3: Changing CSS Styles
+// TODO: Select the first list item and change its text color to red
 ```
 
 ### Exercise 4: Adding/Removing Classes
 
 ```js
-// EXERCISE 4: Adding/Removing Classes
-// Add a new class called 'active' to the element with the ID 'list'.
-// After 2 seconds, remove the class 'active' from the same element.
+// Exercise 4: Adding/Removing Classes
+// TODO: Add the "highlight" class to the first paragraph
+// TODO: Remove the "highlight" class from the first paragraph after 3 seconds
 ```
 
 ### Exercise 5: Creating and Appending Elements
 
 ```js
-// EXERCISE 5: Creating and Appending Elements
-// Create a new <button> element with the text 'Click Me'.
-// Append this button to the element with the ID 'content'.
+// Exercise 5: Creating and Appending Elements
+// TODO: Create a new list item with the text "Item 4" and append it to the existing list
 ```
 
 ### Exercise 6: Removing Elements
 
 ```js
-// EXERCISE 6: Removing Elements
-// Select the element with the ID 'result' and remove it from the DOM.
+// Exercise 6: Removing Elements
+// TODO: Remove the last list item from the unordered list
 ```
 
 ### Exercise 7: Handling Events
 
 ```js
-// EXERCISE 7: Handling Events
-// Add a 'click' event listener to the button created in Exercise 5.
-// When clicked, the button should alert "Button Clicked!".
+// Exercise 7: Handling Events
+// TODO: Add a click event listener to the button that displays an alert saying "Button clicked!"
 ```
 
 ### Exercise 8: Handling Events
