@@ -51,8 +51,9 @@ inputField.addEventListener('input', function() {
 
 // Exercise 9: Toggling Visibility
 // TODO: Add a click event listener to the button that toggles the visibility of the content div
+let content = document.querySelector('#content');
 button.addEventListener('click', function() {
-    divResult.classList.toggle('hidden');
+    content.classList.toggle('hidden');
 });
 
 // Exercise 10: Modifying Attributes
